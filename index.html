@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iconic Infra Group</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-banner {
+      position: relative;
+      background-color: #fff;
+      height: 500px; /* fixed height for layout */
+      overflow: hidden;
+    }
+
+    .branding {
+      position: absolute;
+      top: 30px;
+      left: 5%;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .branding img {
+      height: 100px;
+      margin-right: 10px;
+    }
+
+    .branding h3 {
+      font-size: 26px;
+      margin: 0;
+      font-weight: bold;
+      color: #ff6600;
+    }
+
+    .branding h3 span {
+      color: #4b0082;
+    }
+
+    .nav-links {
+      position: absolute;
+      top: 20px;
+      right: 5%;
+      z-index: 2;
+      font-size: 26px;
+    }
+
+    .nav-links a {
+      color: #003366;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .person-img {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: auto;
+      height: 70%;
+      max-height: 100%;
+      z-index: 1;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .branding h3 {
+        font-size: 22px;
+      }
+
+      .person-img {
+        height: 75%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-banner {
+        height: 450px;
+      }
+
+      .branding {
+        top: 20px;
+        left: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .person-img {
+        height: 65%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .top-banner {
+        height: 400px;
+      }
+
+      .branding h3 {
+        font-size: 18px;
+      }
+
+      .nav-links {
+        top: 10px;
+        font-size: 16px;
+        right: 10px;
+      }
+
+      .person-img {
+        height: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Banner -->
+  <div class="container-fluid top-banner p-0">
+    <!-- Branding: Logo + Title -->
+    <div class="branding">
+      <img src="images/logo.png" width="100px" height="300px" alt="Company Logo">
+      <h3>ICONIC <span>INFRA GROUP</span></h3>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Person Image -->
+    <img src="images/person.png" alt="Person" class="person-img">
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
